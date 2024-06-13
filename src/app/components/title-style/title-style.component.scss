@@ -1,0 +1,17 @@
+.box-container {
+  position: relative;
+  padding: 8px 14px;
+  background-color: #1f1f1f;
+  border: 1px solid #464646;
+  border-radius: 50px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.corner-image {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}

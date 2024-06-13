@@ -1,0 +1,99 @@
+.container {
+  background-color: #0e0e0e;
+  padding: 0.8rem 14rem;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.6;
+}
+
+.center {
+  text-align: center;
+}
+
+.outline {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0.8rem; /* Adjust this value as needed */
+  z-index: 1000; /* Ensure it's above other content if necessary */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #464646;
+  border-radius: 50px;
+  background-color: #1f1f1f; /* Example background color */
+  padding: 4px; /* Adjust padding to fit content properly */
+}
+
+.tag {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0.8rem 1.2rem; /* Adjust padding as per your design */
+  border-radius: 50px;
+  color: white; /* Default color */
+}
+
+.name-tag {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem; /* Example size */
+  padding: 0 0.8rem; /* Adjust padding as per your design */
+}
+
+.tag.active {
+  background-color: var(--primary-color); /* Example active state */
+}
+
+// // Home Section // //
+
+.home {
+  padding: 120px 0 100px 0;
+}
+
+.about-me {
+  font-size: 2.5rem; /* Adjust font size as per your design */
+  margin-bottom: 20px; /* Optional: Adjust margin as needed */
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.icon {
+  color: var(--primary-color) !important;
+  font-size: xx-large !important;
+}
+
+.adv-box-container {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*this */
+  gap: 10px;
+}
+
+// // Experience // //
+
+.experience {
+  padding-bottom: 130px;
+}
+
+// // Skills // //
+.skills {
+  padding-bottom: 120px;
+}
+
+// // services // //
+.services {
+  padding-bottom: 100px;
+}
+.services-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*this */
+  gap: 10px;
+}

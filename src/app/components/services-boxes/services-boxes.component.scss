@@ -1,0 +1,42 @@
+.box {
+  margin-top: 60px;
+  background-color: #181818;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.diamond {
+  position: relative;
+  top: -37px;
+  width: 70px;
+  height: 70px;
+  border: 3.5px solid #181818;
+  border-radius: 12px;
+  transform: rotate(45deg);
+  background-color: #0e0e0e;
+  margin: auto;
+  z-index: 1;
+}
+
+.icon {
+  position: relative;
+  font-size: 40px;
+  top: -94.5px;
+  z-index: 2;
+}
+
+.text-container {
+  padding: 0 16px 16px 16px;
+  margin-top: -45px;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 550;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1;
+}
