@@ -1,6 +1,6 @@
 .container {
   background-color: #0e0e0e;
-  padding: 0.8rem 14rem;
+  padding: 0.8rem 10rem;
 }
 
 .title {
@@ -81,12 +81,52 @@
 
 .experience {
   padding-bottom: 130px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
+
+.experience-tag-container {
+}
+
+.experience-tag-title {
+  list-style: none; /* Remove default list style */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  font-size: xx-large;
+}
+
+.experience-tag-title::before {
+  content: ""; /* Ensure content is empty to prevent default list style */
+  display: inline-block;
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  background: url("../assets/list_bullet.png") center/contain no-repeat; /* Center the image and make it fit inside the box */
+  margin-right: 10px; /* Adjust as needed for spacing between bullet and text */
+}
+
+.experience-details {
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  border-left: #464646 2px dashed;
+}
+.experience-details p {
+  color: #a3a8b1;
+  font-size: large;
+  line-height: 1.3;
+}
+/* Remove padding-bottom from the last .experience-details within each .experience-tag-container */
+.experience-tag-container:last-child .experience-details {
+  padding-bottom: 0;
+}
+
+//
 
 // // Skills // //
 .skills {
   padding-bottom: 120px;
 }
+//
 
 // // services // //
 .services {

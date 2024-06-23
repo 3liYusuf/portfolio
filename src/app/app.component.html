@@ -36,6 +36,21 @@
       <app-title-style [title]="'MY RESUME'"></app-title-style>
     </div>
     <div class="title center">Experience</div>
+    <ul>
+      <div
+        class="experience-tag-container"
+        *ngFor="let experience of experiences"
+      >
+        <li class="experience-tag-title">
+          {{ experience.title }}
+        </li>
+        <div class="experience-details">
+          <p>{{ experience.from }} - {{ experience.to }}</p>
+          <p>{{ experience.at }}</p>
+          <p>{{ experience.description }}</p>
+        </div>
+      </div>
+    </ul>
   </div>
   <div id="skills" style="height: 100px"></div>
   <div class="skills" appIntersectionObserver="skills">
