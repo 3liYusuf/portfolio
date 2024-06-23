@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -30,4 +32,33 @@ export class AppComponent {
       description: 'description',
     },
   ];
+  contactForm: FormGroup;
+  confirmation: boolean = false;
+
+  constructor(private fb: FormBuilder, private http: HttpClient) {
+    this.contactForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      subject: [''],
+      letter: ['', Validators.required],
+    });
+  }
+
+  onSubmit() {
+    if (this.contactForm.valid) {
+      const formData = this.contactForm.value;
+      this.http
+        .post('https://formspree.io/f/mblrryry', formData, {
+          headers: { Accept: 'application/json' },
+        })
+        .subscribe({
+          next: (response) => {
+            this.contactForm.reset();
+            this.confirmation = true;
+          },
+          error: (error) => {
+            alert('Oops! There was a problem submitting your form');
+          },
+        });
+    }
+  }
 }

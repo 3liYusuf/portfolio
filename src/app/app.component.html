@@ -129,12 +129,80 @@
     <div class="title center">What I've done?</div>
   </div>
   <div id="contact" style="height: 100px"></div>
-  <div
-    class="contact center"
-    style="height: 100vh"
-    appIntersectionObserver="contact"
-  >
-    <app-title-style [title]="'CONTACT US'"></app-title-style>
-    <div class="title center">Let's Get In Touch</div>
+  <div class="contact" style="height: 100vh" appIntersectionObserver="contact">
+    <div class="contact-first-container">
+      <app-title-style [title]="'CONTACT US'"></app-title-style>
+      <div class="title">Let's Get In Touch!</div>
+      <div class="contact-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse
+        impedit eaque molestiae vero, omnis velit nostrum et quasi corporis,
+        cupiditate veniam molestias obcaecati exercitationem amet, quaerat
+        praesentium quod ex.
+      </div>
+      <hr />
+      <div class="follow-me icons">
+        <div class="f-icon-outline">
+          <a
+            href="https://www.linkedin.com/in/ali-yusuf-03a37925a/"
+            target="_blank"
+            class="follow-icon fab fa-linkedin"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://github.com/3liYusuf"
+            target="_blank"
+            class="follow-icon fab fa-github-square"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://wa.me/+97335053631"
+            target="_blank"
+            class="follow-icon fab fa-whatsapp-square"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://www.instagram.com/3li.yusuf"
+            target="_blank"
+            class="follow-icon fab fa-instagram-square"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-second-container">
+      <div class="title">Get In Touch!</div>
+      <form
+        class="contact-form"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <input
+          class="contact-form-input"
+          type="text"
+          formControlName="email"
+          placeholder="Enter your E-mail"
+        />
+        <input
+          class="contact-form-input"
+          type="text"
+          formControlName="subject"
+          placeholder="Enter the subject"
+        />
+
+        <textarea
+          class="contact-form-input"
+          type="text"
+          formControlName="letter"
+          placeholder="Please write your letter here"
+          rows="6"
+        ></textarea>
+        <button class="form-submit" type="submit">Send</button>
+      </form>
+      <div *ngIf="confirmation" id="confirmation">
+        Thank you! Your message has been sent.
+      </div>
+    </div>
   </div>
 </div>

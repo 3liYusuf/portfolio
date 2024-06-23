@@ -9,6 +9,8 @@ import { AdvBoxComponent } from './components/adv-box/adv-box.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServicesBoxesComponent } from './components/services-boxes/services-boxes.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,13 @@ import { ServicesBoxesComponent } from './components/services-boxes/services-box
     AdvBoxComponent,
     ServicesBoxesComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
