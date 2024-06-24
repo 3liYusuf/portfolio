@@ -27,6 +27,10 @@
 }
 
 .tag {
+  flex: 1;
+  justify-self: center;
+  text-align: center;
+  font-size: large;
   text-decoration: none;
   box-sizing: border-box;
   padding: 0.8rem 1.2rem; /* Adjust padding as per your design */
@@ -38,7 +42,7 @@
   font-family: "Jost", sans-serif;
   font-weight: 700;
   text-decoration: none;
-  font-size: 2rem; /* Example size */
+  font-size: 2.2rem; /* Example size */
   padding: 0 0.8rem; /* Adjust padding as per your design */
 }
 
@@ -213,3 +217,67 @@
   color: green;
 }
 //
+
+// // Footer // //
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.f-header {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.f-desc {
+  margin-top: 16px;
+}
+.desc-paragraph {
+  font-size: 1.2rem;
+  color: #a3a8b1;
+}
+
+.email-container {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.email-icon-outline {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.email-icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.f-second {
+  min-width: 25%;
+  margin-top: 13px;
+}
+.f-sub-header {
+  font-size: 1.3rem;
+}
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+.q-link {
+  text-decoration: none;
+  color: #a3a8b1;
+}
+.f-third {
+  min-width: 25%;
+  margin-top: 13px;
+}

@@ -129,7 +129,7 @@
     <div class="title center">What I've done?</div>
   </div>
   <div id="contact" style="height: 100px"></div>
-  <div class="contact" style="height: 100vh" appIntersectionObserver="contact">
+  <div class="contact" appIntersectionObserver="contact">
     <div class="contact-first-container">
       <app-title-style [title]="'CONTACT US'"></app-title-style>
       <div class="title">Let's Get In Touch!</div>
@@ -139,7 +139,20 @@
         cupiditate veniam molestias obcaecati exercitationem amet, quaerat
         praesentium quod ex.
       </div>
-      <hr />
+      <hr
+        style="
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(2, 0, 36, 1) 100%
+          );
+          height: 1.2px;
+          margin: 28px 0 10px 0;
+          border: 0;
+        "
+      />
       <div class="follow-me icons">
         <div class="f-icon-outline">
           <a
@@ -205,4 +218,85 @@
       </div>
     </div>
   </div>
+  <div id="footer" style="height: 100px"></div>
+  <div class="footer">
+    <div class="f-first">
+      1
+      <div class="f-header">ALI</div>
+      <div class="f-desc">
+        <div class="desc-paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          modi amet vel quae molestiae voluptatibus numquam.
+        </div>
+        <div class="desc-email">
+          <a class="email-container" href="mailto:IT@3liYusuf.com">
+            <div class="email-icon-outline">
+              <i class="email-icon fas fa-envelope"></i>
+            </div>
+            <div class="email-txt">IT&#64;3liYusuf.com</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="f-second">
+      2
+      <div class="f-sub-header">Quick Links</div>
+      <div class="quick-links">
+        <a href="#home" class="q-link">Home</a>
+        <a href="#experience" class="q-link">Experience</a>
+        <a href="#skills" class="q-link">Skills</a>
+        <a href="#services" class="q-link">Services</a>
+        <a href="#projects" class="q-link">Projects</a>
+        <a href="#contact" class="q-link">Contact</a>
+      </div>
+    </div>
+    <div class="f-third">
+      3
+      <div class="f-sub-header">Social Media</div>
+      <div class="follow-me icons">
+        <div class="f-icon-outline">
+          <a
+            href="https://www.linkedin.com/in/ali-yusuf-03a37925a/"
+            target="_blank"
+            class="follow-icon fab fa-linkedin"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://github.com/3liYusuf"
+            target="_blank"
+            class="follow-icon fab fa-github-square"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://wa.me/+97335053631"
+            target="_blank"
+            class="follow-icon fab fa-whatsapp-square"
+          ></a>
+        </div>
+        <div class="f-icon-outline">
+          <a
+            href="https://www.instagram.com/3li.yusuf"
+            target="_blank"
+            class="follow-icon fab fa-instagram-square"
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(2, 0, 36, 1) 100%
+      );
+      height: 2px;
+      margin: 28px 0 16px;
+    "
+  ></div>
+  <div class="copyright">© 2024 All rights reserved - Ali</div>
 </div>
