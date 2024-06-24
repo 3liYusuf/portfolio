@@ -34,7 +34,21 @@ export class AppComponent {
   ];
   contactForm: FormGroup;
   confirmation: boolean = false;
-
+  projects = [
+    { image: 'assets/BookMYBook.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+    { image: 'assets/list_bullet.png' },
+  ];
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],

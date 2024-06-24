@@ -1,6 +1,6 @@
 .container {
   background-color: #0e0e0e;
-  padding: 0.8rem 7rem;
+  padding: 0.8rem 7rem 3rem 7rem;
 }
 
 .title {
@@ -84,7 +84,7 @@
 // // Experience // //
 
 .experience {
-  padding-bottom: 130px;
+  padding-bottom: 50px;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -143,6 +143,24 @@
 }
 //
 
+// // Projects // //
+.projects {
+  padding-bottom: 100px;
+}
+.projects-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  gap: 10px;
+}
+.project {
+  border: #bbb 30px solid;
+  border-radius: 30px;
+}
+.project-img {
+  width: 400px;
+  height: 200px;
+}
 // // Contact // //
 .contact {
   display: flex;
@@ -202,6 +220,10 @@
   outline: none;
 }
 
+textarea.contact-form-input {
+  resize: none; /* Prevents resizing */
+}
+
 .form-submit {
   background-color: var(--primary-color);
   padding: 10px;
@@ -220,8 +242,13 @@
 
 // // Footer // //
 .footer {
+  background-color: #1f1f1f;
+  padding: 3rem 7rem 0.8rem 7rem;
+}
+.flexing {
   display: flex;
   justify-content: space-between;
+  gap: 100px;
 }
 .f-header {
   font-family: "Jost", sans-serif;
@@ -261,7 +288,7 @@
 }
 
 .f-second {
-  min-width: 25%;
+  min-width: 20%;
   margin-top: 13px;
 }
 .f-sub-header {
@@ -276,8 +303,24 @@
 .q-link {
   text-decoration: none;
   color: #a3a8b1;
+  transition: ease 0.2s;
+  width: fit-content;
+}
+.q-link:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
 }
 .f-third {
-  min-width: 25%;
+  min-width: 20%;
   margin-top: 13px;
+}
+
+.f-follow-me {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.copyright {
+  text-align: center;
 }

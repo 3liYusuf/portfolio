@@ -29,8 +29,8 @@
       ></a>
     </div>
     <br /><br /><br />
-    <div id="experience"></div>
   </div>
+  <div id="experience" style="height: 100px"></div>
   <div class="experience" appIntersectionObserver="experience">
     <div class="center">
       <app-title-style [title]="'MY RESUME'"></app-title-style>
@@ -120,13 +120,20 @@
     </div>
   </div>
   <div id="projects" style="height: 100px"></div>
-  <div
-    class="projects center"
-    style="height: 100vh"
-    appIntersectionObserver="projects"
-  >
+  <div class="projects center" appIntersectionObserver="projects">
     <app-title-style [title]="'MY PROJECTS'"></app-title-style>
     <div class="title center">What I've done?</div>
+    <div class="projects-container">
+      <div class="project" *ngFor="let project of projects">
+        <img src="{{ project.image }}" class="project-img" alt="" />
+        <!-- BookMYBook -->
+        <!-- Ahlan Portal -->
+        <!-- Car Showroom App -->
+        <!-- POS App -->
+        <!-- Cinema -->
+        <!-- Pharmacy -->
+      </div>
+    </div>
   </div>
   <div id="contact" style="height: 100px"></div>
   <div class="contact" appIntersectionObserver="contact">
@@ -141,16 +148,19 @@
       </div>
       <hr
         style="
-          background: rgb(2, 0, 36);
+          background: rgb(0, 0, 0);
           background: linear-gradient(
             90deg,
-            rgba(2, 0, 36, 1) 0%,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(255, 255, 255, 1) 5%,
             rgba(255, 255, 255, 1) 50%,
-            rgba(2, 0, 36, 1) 100%
+            rgba(255, 255, 255, 1) 95%,
+            rgba(0, 0, 0, 1) 100%
           );
-          height: 1.2px;
+          height: 1px;
           margin: 28px 0 10px 0;
           border: 0;
+          border-radius: 50px;
         "
       />
       <div class="follow-me icons">
@@ -218,10 +228,11 @@
       </div>
     </div>
   </div>
-  <div id="footer" style="height: 100px"></div>
-  <div class="footer">
+</div>
+<div id="footer"></div>
+<div class="footer">
+  <div class="flexing">
     <div class="f-first">
-      1
       <div class="f-header">ALI</div>
       <div class="f-desc">
         <div class="desc-paragraph">
@@ -239,7 +250,6 @@
       </div>
     </div>
     <div class="f-second">
-      2
       <div class="f-sub-header">Quick Links</div>
       <div class="quick-links">
         <a href="#home" class="q-link">Home</a>
@@ -251,9 +261,8 @@
       </div>
     </div>
     <div class="f-third">
-      3
       <div class="f-sub-header">Social Media</div>
-      <div class="follow-me icons">
+      <div class="f-follow-me icons">
         <div class="f-icon-outline">
           <a
             href="https://www.linkedin.com/in/ali-yusuf-03a37925a/"
