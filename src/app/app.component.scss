@@ -154,10 +154,12 @@
   gap: 10px;
 }
 .project {
-  border: #bbb 30px solid;
+  border: #bbb 20px solid;
   border-radius: 30px;
+  background-color: #bbb;
 }
 .project-img {
+  border-radius: 20px;
   width: 400px;
   height: 200px;
 }
