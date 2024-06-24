@@ -2,7 +2,6 @@
   <div id="home"></div>
   <div class="outline">
     <a href="#home" class="tag">Home</a>
-    <a href="/BookMYBook" class="tag">Book</a>
     <a href="#experience" class="tag">Experience</a>
     <a href="#skills" class="tag">Skills</a>
     <a href="#home" class="name-tag">ALI</a>
@@ -126,7 +125,12 @@
     <div class="title center">What I've done?</div>
     <div class="projects-container">
       <div class="project" *ngFor="let project of projects">
-        <img src="{{ project.image }}" class="project-img" alt="" />
+        <img
+          src="{{ project.image }}"
+          class="project-img"
+          routerLink="/BookMYBook"
+          alt=""
+        />
         <!-- BookMYBook -->
         <!-- Ahlan Portal -->
         <!-- Car Showroom App -->
