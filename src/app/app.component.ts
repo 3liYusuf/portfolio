@@ -36,37 +36,85 @@ export class AppComponent {
   confirmation: boolean = false;
   projects = [
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
     { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    { image: 'assets/Ahlan_Portal.png', url: '/BookMYBook' },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+    },
   ];
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
