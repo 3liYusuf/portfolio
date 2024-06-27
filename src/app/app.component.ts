@@ -11,13 +11,13 @@ export class AppComponent {
   title = 'portfolio';
   experiences = [
     {
-      title: 'Software Engineer',
+      title: 'Software Engineer & Tester',
       from: '07/23',
       to: '03/24',
       at: 'Ahlan Technologies W.L.L',
     },
     {
-      title: 'Software Engineer',
+      title: 'Software Engineer (Ionic)',
       from: '03/24',
       to: '05/24',
       at: 'RemoteApps',
