@@ -53,14 +53,32 @@
 // // Home Section // //
 
 .home {
-  padding: 120px 0 100px 0;
+  padding: 60px 0 0px 0;
 }
 
 .about-me {
-  font-size: 3.5rem; /* Adjust font size as per your design */
-  margin-bottom: 20px; /* Optional: Adjust margin as needed */
+  font-size: 3.5rem;
   line-height: 1;
   margin: 20px 0;
+}
+.neon-transition {
+  background-color: var(--primary-color);
+  color: #0e0e0e;
+  border: var(--primary-color) solid 1px;
+  transition: ease 0.2s;
+}
+.neon-transition:hover {
+  background-color: #0e0e0e;
+  color: var(--primary-color);
+}
+.get-cv {
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
 .icons {
@@ -71,7 +89,7 @@
 
 .icon {
   color: var(--primary-color) !important;
-  font-size: xx-large !important;
+  font-size: 3.6rem !important;
 }
 
 .adv-box-container {
@@ -325,4 +343,33 @@ textarea.contact-form-input {
 
 .copyright {
   text-align: center;
+}
+
+@media (width <= 930px) {
+  .title {
+    font-size: 2.3rem;
+    line-height: 1.6;
+  }
+
+  .tag {
+    font-size: small;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0.8rem 0.4rem; /* Adjust padding as per your design */
+    border-radius: 50px;
+  }
+
+  .name-tag {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.7rem; /* Example size */
+    padding: 0 0.4rem; /* Adjust padding as per your design */
+  }
+
+  .about-me {
+    font-size: 1.75rem; /* Adjust font size as per your design */
+    line-height: 1;
+    margin: 20px 0;
+  }
 }

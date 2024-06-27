@@ -12,24 +12,20 @@ export class AppComponent {
   experiences = [
     {
       title: 'Software Engineer',
-      from: 'from',
-      to: 'to',
-      at: 'at',
-      description: 'description',
+      from: '07/23',
+      to: '03/24',
+      at: 'Ahlan Technologies W.L.L',
     },
     {
-      title: 'DevOps',
-      from: 'from',
-      to: 'to',
-      at: 'at',
-      description: 'description',
+      title: 'Software Engineer',
+      from: '03/24',
+      to: '05/24',
+      at: 'RemoteApps',
     },
     {
-      title: 'Full-Stack Developer',
-      from: 'from',
-      to: 'to',
-      at: 'at',
-      description: 'description',
+      title: 'Software Engineer',
+      from: '05/24',
+      at: 'Madar Training Center',
     },
   ];
   contactForm: FormGroup;

@@ -1,5 +1,5 @@
 <div class="container">
-  <div id="home"></div>
+  <div id="home" appIntersectionObserver="home"></div>
   <div class="outline">
     <a href="#home" class="tag">Home</a>
     <a href="#experience" class="tag">Experience</a>
@@ -15,7 +15,7 @@
       I'm a <span class="primary-txt">Full-Stack Developer</span><br />
       specialized in web development.
     </div>
-
+    <div class="get-cv neon-transition">Download CV</div>
     <div class="icons">
       <a
         href="https://www.linkedin.com/in/ali-yusuf-03a37925a/"
@@ -30,8 +30,12 @@
     </div>
     <br /><br /><br />
   </div>
-  <div id="experience" style="height: 100px"></div>
   <div class="experience" appIntersectionObserver="experience">
+    <div
+      id="experience"
+      appIntersectionObserver="experience"
+      style="height: 100px"
+    ></div>
     <div class="center">
       <app-title-style [title]="'MY RESUME'"></app-title-style>
     </div>
@@ -45,15 +49,24 @@
           {{ experience.title }}
         </li>
         <div class="experience-details">
-          <p>{{ experience.from }} - {{ experience.to }}</p>
-          <p>{{ experience.at }}</p>
-          <p>{{ experience.description }}</p>
+          <p>
+            {{ experience.from }} -
+            <span *ngIf="experience.to">{{ experience.to }}</span
+            ><span *ngIf="!experience.to">Present</span>
+          </p>
+          <p *ngIf="experience.at">{{ experience.at }}</p>
+          <p *ngIf="experience.description">{{ experience.description }}</p>
         </div>
       </div>
     </ul>
+    <div appIntersectionObserver="experience" style="height: 50px"></div>
   </div>
-  <div id="skills" style="height: 100px"></div>
   <div class="skills" appIntersectionObserver="skills">
+    <div
+      id="skills"
+      appIntersectionObserver="skills"
+      style="height: 100px"
+    ></div>
     <div class="center">
       <app-title-style [title]="'MY SKILLS'"></app-title-style>
     </div>
@@ -90,9 +103,14 @@
         [icon]="'fab fa-css3-alt'"
       ></app-adv-box>
     </div>
+    <div appIntersectionObserver="skills" style="height: 100px"></div>
   </div>
-  <div id="services" style="height: 100px"></div>
   <div class="services center" appIntersectionObserver="services">
+    <div
+      id="services"
+      appIntersectionObserver="services"
+      style="height: 100px"
+    ></div>
     <app-title-style [title]="'MY SERVICES'"></app-title-style>
     <div class="title center">What Can I Do?</div>
     <div class="services-boxes-container">
@@ -118,9 +136,14 @@
         "
       ></app-services-boxes>
     </div>
+    <div appIntersectionObserver="services" style="height: 150px"></div>
   </div>
-  <div id="projects" style="height: 100px"></div>
   <div class="projects center" appIntersectionObserver="projects">
+    <div
+      id="projects"
+      appIntersectionObserver="projects"
+      style="height: 150px"
+    ></div>
     <app-title-style [title]="'MY PROJECTS'"></app-title-style>
     <div class="title center">What I've done?</div>
     <div class="projects-container">
@@ -139,7 +162,11 @@
       </a>
     </div>
   </div>
-  <div id="contact" style="height: 100px"></div>
+  <div
+    id="contact"
+    appIntersectionObserver="projects"
+    style="height: 100px"
+  ></div>
   <div class="contact" appIntersectionObserver="contact">
     <div class="contact-first-container">
       <app-title-style [title]="'CONTACT US'"></app-title-style>
@@ -233,8 +260,8 @@
     </div>
   </div>
 </div>
-<div id="footer"></div>
-<div class="footer">
+<div id="footer" appIntersectionObserver="contact"></div>
+<div class="footer" appIntersectionObserver="contact">
   <div class="flexing">
     <div class="f-first">
       <div class="f-header">ALI</div>
