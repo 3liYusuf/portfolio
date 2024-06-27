@@ -30,86 +30,24 @@ export class AppComponent {
   ];
   contactForm: FormGroup;
   confirmation: boolean = false;
+  // BookMYBook
+  // Ahlan Portal
+  // Car Showroom App
+  // POS App
+  // Cinema
+  // Pharmacy
   projects = [
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
     {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+      image: 'assets/BookMYBook.png',
+      url: '/BookMYBook',
+      name: 'BookMYBook',
+      year: '2024',
     },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
     {
       image: 'assets/Ahlan_Portal.png',
       url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
-    },
-    { image: 'assets/BookMYBook.png', url: '/BookMYBook' },
-    {
-      image: 'assets/Ahlan_Portal.png',
-      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+      name: 'Ahlan Portal',
+      year: '2024',
     },
   ];
   constructor(private fb: FormBuilder, private http: HttpClient) {

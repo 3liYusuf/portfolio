@@ -168,20 +168,30 @@
 }
 .projects-container {
   display: flex;
-  width: 100%;
-  overflow-x: auto;
-  gap: 10px;
+  flex-direction: column;
+  gap: 5rem;
+}
+.project-outline {
+  display: flex;
 }
 .project {
+  flex: 1;
   border: #bbb 20px solid;
   border-radius: 30px;
   background-color: #bbb;
 }
 .project-img {
   border-radius: 20px;
-  width: 400px;
-  height: 200px;
+  max-width: 600px;
+  height: 300px;
 }
+.proj-even-data {
+  align-self: center;
+}
+.proj-odd-data {
+  align-self: center;
+}
+
 // // Contact // //
 .contact {
   display: flex;
