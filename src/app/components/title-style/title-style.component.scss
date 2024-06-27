@@ -15,3 +15,9 @@
   width: 40px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
 }
+
+@media (width <= 930px) {
+  .title {
+    font-size: small;
+  }
+}

@@ -53,3 +53,17 @@
   border-radius: 50px;
   width: 0%;
 }
+
+@media (width <= 930px) {
+  .title-container {
+    margin-top: -25px;
+  }
+
+  .box-icon {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}

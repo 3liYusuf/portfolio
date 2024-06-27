@@ -70,6 +70,7 @@
 .neon-transition:hover {
   background-color: #0e0e0e;
   color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
 }
 .get-cv {
   padding: 15px 20px;
@@ -138,11 +139,10 @@
   font-size: large;
   line-height: 1.3;
 }
-/* Remove padding-bottom from the last .experience-details within each .experience-tag-container */
+
 .experience-tag-container:last-child .experience-details {
   padding-bottom: 0;
 }
-
 //
 
 // // Skills // //
@@ -251,7 +251,6 @@ textarea.contact-form-input {
   font-size: larger;
   font-weight: 590;
   cursor: pointer;
-  border: 0;
   border-radius: 20px;
 }
 
@@ -347,8 +346,13 @@ textarea.contact-form-input {
 }
 
 @media (width <= 930px) {
+  .container {
+    background-color: #0e0e0e;
+    padding: 0.6rem 4rem 1.5rem 4rem;
+  }
+
   .title {
-    font-size: 2.3rem;
+    font-size: 2rem;
     line-height: 1.6;
   }
 
@@ -372,5 +376,82 @@ textarea.contact-form-input {
     font-size: 1.75rem; /* Adjust font size as per your design */
     line-height: 1;
     margin: 20px 0;
+  }
+  .get-cv {
+    font-size: medium;
+    padding: 10px 15px;
+  }
+  .icon {
+    font-size: 2.5rem !important;
+  }
+  .experience {
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .experience-tag-title {
+    font-size: larger;
+  }
+
+  .experience-tag-title::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .experience-details {
+    margin-left: 15px;
+  }
+
+  .experience-details p,
+  .experience-details p span {
+    font-size: 0.95rem;
+  }
+
+  // // Contact // //
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-description {
+    font-size: large;
+  }
+  //
+
+  // // Footer // //
+
+  .flexing {
+    gap: 30px;
+  }
+  .f-header {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .f-desc {
+    margin-top: 10px;
+  }
+  .desc-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .email-container {
+    margin-top: 15px;
+  }
+
+  .f-sub-header {
+    font-size: 1rem;
+  }
+  .quick-links {
+    margin-top: 10px;
+    gap: 5px;
+  }
+
+  .f-second {
+    min-width: 30%;
+    margin-top: 13px;
+  }
+
+  .f-third {
+    display: none;
   }
 }
