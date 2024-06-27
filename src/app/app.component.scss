@@ -291,6 +291,14 @@ textarea.contact-form-input {
   gap: 10px;
   align-items: center;
   text-decoration: none;
+  width: fit-content;
+  transition: ease 0.2s;
+}
+.email-container:hover {
+  transform: scale(1.1);
+}
+.email-container:hover .email-txt {
+  color: var(--primary-color);
 }
 .email-icon-outline {
   background-color: #fff;
@@ -419,7 +427,10 @@ textarea.contact-form-input {
   //
 
   // // Footer // //
-
+  .footer {
+    background-color: #1f1f1f;
+    padding: 3rem 4rem 0.8rem 4rem;
+  }
   .flexing {
     gap: 30px;
   }
