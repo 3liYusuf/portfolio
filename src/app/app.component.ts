@@ -49,6 +49,18 @@ export class AppComponent {
       name: 'Ahlan Portal',
       year: '2024',
     },
+    {
+      image: 'assets/BookMYBook.png',
+      url: '/BookMYBook',
+      name: 'BookMYBook',
+      year: '2024',
+    },
+    {
+      image: 'assets/Ahlan_Portal.png',
+      url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
+      name: 'Ahlan Portal',
+      year: '2024',
+    },
   ];
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
