@@ -170,26 +170,61 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  margin-top: 4rem;
 }
-.project-outline {
+.project-even-outline {
+  position: relative;
   display: flex;
+  align-items: center;
 }
-.project {
-  flex: 1;
+.project-odd-outline {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.project-even-img {
+  width: 55%;
   border: #bbb 20px solid;
   border-radius: 30px;
   background-color: #bbb;
-}
-.project-img {
   border-radius: 20px;
-  max-width: 600px;
-  height: 300px;
+}
+.project-odd-img {
+  width: 55%;
+  border: #bbb 20px solid;
+  border-radius: 30px;
+  background-color: #bbb;
+  border-radius: 20px;
+  order: 2;
 }
 .proj-even-data {
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow with blur */
 }
 .proj-odd-data {
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  right: 65%;
+  transform: translate(50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow with blur */
+}
+.proj-name {
+  color: var(--primary-color);
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.proj-year {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2.6rem;
 }
 
 // // Contact // //

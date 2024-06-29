@@ -149,10 +149,13 @@
     <div class="projects-container">
       <div
         [href]="project.url"
-        class="project-outline"
+        [ngClass]="i % 2 == 0 ? 'project-even-outline' : 'project-odd-outline'"
         *ngFor="let project of projects; let i = index"
       >
-        <img [src]="project.image" class="project project-img" />
+        <img
+          [src]="project.image"
+          [ngClass]="i % 2 == 0 ? 'project-even-img' : 'project-odd-img'"
+        />
         <div [ngClass]="i % 2 == 0 ? 'proj-even-data' : 'proj-odd-data'">
           <p class="proj-name">{{ project.name }}</p>
           <p class="proj-year">{{ project.year }}</p>
