@@ -461,6 +461,13 @@ textarea.contact-form-input {
     font-size: 0.95rem;
   }
 
+  .proj-name {
+    font-size: 1.9rem;
+  }
+  .proj-year {
+    font-size: 1.9rem;
+  }
+
   // // Contact // //
   .contact {
     flex-direction: column;
@@ -510,4 +517,7 @@ textarea.contact-form-input {
   .f-third {
     display: none;
   }
+}
+
+@media (width <= 550px) {
 }
