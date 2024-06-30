@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-title-style',
@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TitleStyleComponent {
   @Input() title!: string;
+  @Input() link = 'assets/3_lines_top_right.png';
+  constructor() {}
 }

@@ -11,12 +11,13 @@
 .center {
   text-align: center;
 }
-
-.outline {
+.sticky-outline {
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0.8rem; /* Adjust this value as needed */
   z-index: 1000; /* Ensure it's above other content if necessary */
+}
+.outline {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +50,27 @@
 .tag.active {
   background-color: var(--primary-color); /* Example active state */
 }
+.color-changers {
+  text-align: center;
+}
+.theme-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin: 5px;
+}
 
+.green-btn {
+  background-color: #44ee96;
+}
+.blue-btn {
+  background-color: #007bff;
+}
+.purple-btn {
+  background-color: #a67cf5;
+}
 // // Home Section // //
 
 .home {

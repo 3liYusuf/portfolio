@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  link = 'assets/3_lines_top_right_green.png';
   title = 'portfolio';
   experiences = [
     {
@@ -50,7 +51,11 @@ export class AppComponent {
       year: '2024',
     },
   ];
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient,
+    private renderer: Renderer2
+  ) {
     this.contactForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       subject: [''],
@@ -74,6 +79,24 @@ export class AppComponent {
             alert('Oops! There was a problem submitting your form');
           },
         });
+    }
+  }
+
+  changeTheme(theme: string): void {
+    const htmlElement = document.documentElement;
+    this.renderer.removeClass(htmlElement, 'green-theme');
+    this.renderer.removeClass(htmlElement, 'blue-theme');
+    this.renderer.removeClass(htmlElement, 'purple-theme');
+
+    if (theme === 'green') {
+      this.renderer.addClass(htmlElement, 'green-theme');
+      this.link = 'assets/3_lines_top_right_green.png';
+    } else if (theme === 'blue') {
+      this.renderer.addClass(htmlElement, 'blue-theme');
+      this.link = 'assets/3_lines_top_right_blue.png';
+    } else if (theme === 'purple') {
+      this.renderer.addClass(htmlElement, 'purple-theme');
+      this.link = 'assets/3_lines_top_right_purple.png';
     }
   }
 }
