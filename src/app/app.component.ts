@@ -11,10 +11,9 @@ export class AppComponent {
   title = 'portfolio';
   experiences = [
     {
-      title: 'Software Engineer & Tester',
-      from: '07/23',
-      to: '03/24',
-      at: 'Ahlan Technologies W.L.L',
+      title: 'Software Engineer',
+      from: '05/24',
+      at: 'Madar Training Center',
     },
     {
       title: 'Software Engineer (Ionic)',
@@ -23,9 +22,10 @@ export class AppComponent {
       at: 'RemoteApps',
     },
     {
-      title: 'Software Engineer',
-      from: '05/24',
-      at: 'Madar Training Center',
+      title: 'Software Engineer & Tester',
+      from: '07/23',
+      to: '03/24',
+      at: 'Ahlan Technologies W.L.L',
     },
   ];
   contactForm: FormGroup;
