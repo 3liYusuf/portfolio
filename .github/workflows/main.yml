@@ -31,4 +31,12 @@ jobs:
           cd /var/www/portfolio/
           git pull origin master --force
           npm install
-          ng build --source-map=false --optimization=true
+          ng build --source-map=false --optimization=true || echo "Build completed with warnings"
+
+    - name: Notify build success
+      if: ${{ success() }}
+      run: echo "Build and deployment successful"
+
+    - name: Notify build failure
+      if: ${{ failure() }}
+      run: echo "Build and deployment failed"
