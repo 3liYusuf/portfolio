@@ -163,6 +163,9 @@
 //
 
 // // Projects // //
+#projects {
+  height: 150px;
+}
 .projects {
   padding-bottom: 100px;
 }
@@ -401,35 +404,26 @@ textarea.contact-form-input {
 
 @media (width <= 930px) {
   .container {
-    background-color: #0e0e0e;
     padding: 0.6rem 4rem 1.5rem 4rem;
   }
 
   .title {
     font-size: 2rem;
-    line-height: 1.6;
   }
 
   .tag {
     font-size: small;
-    text-decoration: none;
-    box-sizing: border-box;
-    padding: 0.8rem 0.4rem; /* Adjust padding as per your design */
-    border-radius: 50px;
+    padding: 0.8rem 0.4rem;
   }
 
   .name-tag {
-    font-family: "Jost", sans-serif;
     font-weight: 600;
-    text-decoration: none;
     font-size: 1.7rem; /* Example size */
     padding: 0 0.4rem; /* Adjust padding as per your design */
   }
 
   .about-me {
-    font-size: 1.75rem; /* Adjust font size as per your design */
-    line-height: 1;
-    margin: 20px 0;
+    font-size: 1.75rem;
   }
   .get-cv {
     font-size: medium;
@@ -439,7 +433,6 @@ textarea.contact-form-input {
     font-size: 2.5rem !important;
   }
   .experience {
-    padding-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -521,4 +514,154 @@ textarea.contact-form-input {
 }
 
 @media (width <= 550px) {
+  .container {
+    padding: 0.3rem 0.3rem 1.5rem 0.3rem;
+  }
+
+  .home,
+  .experience,
+  .skills,
+  .services,
+  .projects,
+  .contact,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .services {
+    padding-bottom: 0;
+  }
+  #projects {
+    height: 50px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .outline {
+    padding: 2px; /* Adjust padding to fit content properly */
+  }
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.65rem 0.1rem;
+  }
+
+  .name-tag {
+    display: none;
+  }
+
+  .about-me {
+    font-size: 1.5rem;
+  }
+  .get-cv {
+    font-size: smaller;
+    padding: 8px 12px;
+  }
+  .icon {
+    font-size: 2rem !important;
+  }
+  .experience {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .experience-tag-title {
+    font-size: large;
+  }
+
+  .experience-details {
+    margin-left: 15px;
+  }
+
+  .experience-details p,
+  .experience-details p span {
+    font-size: 0.85rem;
+  }
+
+  // // Projects // //
+
+  .project-even-img {
+    border: #bbb 10px solid;
+  }
+  .project-odd-img {
+    border: #bbb 10px solid;
+  }
+  .proj-name {
+    font-size: 1.3rem;
+  }
+  .proj-year {
+    font-size: 1.3rem;
+  }
+  //
+
+  // // Contact // //
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .contact-form-input {
+    font-size: 0.9rem;
+  }
+  //
+
+  // // Footer // //
+  .footer {
+    padding: 2.5rem 20px 0.8rem 20px;
+  }
+  .flexing {
+    gap: 16px;
+  }
+  .f-header {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 9px;
+  }
+  .f-desc {
+    margin-top: 10px;
+  }
+  .desc-paragraph {
+    font-size: 0.9rem;
+  }
+  .email-icon-outline {
+    height: 30px;
+    width: 30px;
+  }
+  .email-icon {
+    font-size: 1.2rem;
+  }
+  .email-txt {
+    font-size: 0.85rem;
+  }
+
+  .email-container {
+    margin-top: 15px;
+  }
+
+  .f-sub-header {
+    font-size: 1rem;
+  }
+  .quick-links {
+    margin-top: 10px;
+    font-size: small;
+    gap: 5px;
+  }
+
+  .f-second {
+    min-width: 30%;
+    margin-top: 13px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
 }

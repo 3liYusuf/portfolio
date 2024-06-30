@@ -67,3 +67,17 @@
     font-size: 1.8rem;
   }
 }
+
+@media (width <= 550px) {
+  .title-container {
+    margin-top: -25px;
+  }
+
+  .box-icon {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

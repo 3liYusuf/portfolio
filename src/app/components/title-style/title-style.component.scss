@@ -21,3 +21,14 @@
     font-size: small;
   }
 }
+
+@media (width <= 550px) {
+  .title {
+    font-size: 0.7rem;
+  }
+  .corner-image {
+    top: -21px;
+    right: -25px;
+    width: 30px;
+  }
+}
