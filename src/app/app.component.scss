@@ -53,24 +53,45 @@
 // // Home Section // //
 
 .home {
-  padding: 60px 0 0px 0;
+  padding: 60px 0 0 0;
 }
 
 .about-me {
   font-size: 3.5rem;
   line-height: 1;
-  margin: 20px 0;
+  margin: 20px 0 50px 0;
 }
 .neon-transition {
   background-color: var(--primary-color);
   color: #0e0e0e;
   border: var(--primary-color) solid 1px;
   transition: ease 0.2s;
+  display: flex;
+  align-items: center;
+  i,
+  span {
+    background-color: var(--primary-color);
+    color: #0e0e0e;
+    transition: ease 0.2s;
+  }
+  i {
+    padding-right: 5px;
+    font-size: 1.2rem;
+  }
 }
 .neon-transition:hover {
   background-color: #0e0e0e;
   color: var(--primary-color);
   border: var(--primary-color) 1px solid;
+  i,
+  span {
+    background-color: #0e0e0e;
+    color: var(--primary-color);
+  }
+}
+.neon-transition i {
+}
+.neon-transition i:hover {
 }
 .get-cv {
   padding: 15px 20px;
@@ -426,6 +447,7 @@ textarea.contact-form-input {
     font-size: 1.75rem;
   }
   .get-cv {
+    text-decoration: none;
     font-size: medium;
     padding: 10px 15px;
   }

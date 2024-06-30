@@ -15,7 +15,18 @@
       I'm a <span class="primary-txt">Full-Stack Developer</span><br />
       specialized in web development.
     </div>
-    <div class="get-cv neon-transition">Download CV</div>
+    <a style="display: flex; gap: 10px"
+      ><a
+        href="https://github.com/3liyusuf/my-cv/raw/main/Ali%20Yusuf%20-%20Software%20Engineer.pdf"
+        class="get-cv neon-transition"
+        ><i class="fas fa-arrow-alt-circle-down"></i><span>Download CV</span></a
+      >
+      <a
+        href="https://github.com/3liyusuf/my-cv/blob/main/Ali%20Yusuf%20-%20Software%20Engineer.pdf"
+        class="get-cv neon-transition"
+        ><i class="fas fa-eye"></i><span>Preview CV</span></a
+      ></a
+    >
     <div class="icons">
       <a
         href="https://www.linkedin.com/in/ali-yusuf-03a37925a/"
@@ -143,8 +154,8 @@
     <app-title-style [title]="'MY PROJECTS'"></app-title-style>
     <div class="title center">What I've done?</div>
     <div class="projects-container">
-      <div
-        [href]="project.url"
+      <a
+        href="{{ project.url }}"
         [ngClass]="i % 2 == 0 ? 'project-even-outline' : 'project-odd-outline'"
         *ngFor="let project of projects; let i = index"
       >
@@ -156,7 +167,7 @@
           <p class="proj-name">{{ project.name }}</p>
           <p class="proj-year">{{ project.year }}</p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
   <div
