@@ -7,6 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TitleStyleComponent {
   @Input() title!: string;
-  @Input() link = 'assets/3_lines_top_right.png';
+  @Input() link = 'assets/lines/3_lines_top_right_green.png';
   constructor() {}
 }

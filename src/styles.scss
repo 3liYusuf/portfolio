@@ -1,17 +1,21 @@
 :root {
   --primary-color: #44ee96;
+  --bullet-image: url("/assets/bullets/list_bullet_green.png");
 }
 
 .green-theme {
   --primary-color: #44ee96;
+  --bullet-image: url("/assets/bullets/list_bullet_green.png");
 }
 
 .blue-theme {
   --primary-color: #007bff;
+  --bullet-image: url("/assets/bullets/list_bullet_blue.png");
 }
 
 .purple-theme {
   --primary-color: #a67cf5;
+  --bullet-image: url("/assets/bullets/list_bullet_purple.png");
 }
 
 * {

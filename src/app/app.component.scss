@@ -166,7 +166,7 @@
   display: inline-block;
   width: 40px; /* Adjust width as needed */
   height: 40px; /* Adjust height as needed */
-  background: url("../assets/list_bullet.png") center/contain no-repeat; /* Center the image and make it fit inside the box */
+  background: var(--bullet-image) center/contain no-repeat; /* Center the image and make it fit inside the box */
   margin-right: 10px; /* Adjust as needed for spacing between bullet and text */
 }
 

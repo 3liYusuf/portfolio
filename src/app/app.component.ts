@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  link = 'assets/3_lines_top_right_green.png';
+  link = 'assets/lines/3_lines_top_right_green.png';
   title = 'portfolio';
   experiences = [
     {
@@ -39,13 +39,13 @@ export class AppComponent {
   // Pharmacy
   projects = [
     {
-      image: 'assets/BookMYBook.png',
+      image: 'assets/projects/BookMYBook.png',
       url: '/BookMYBook',
       name: 'BookMYBook',
       year: '2024',
     },
     {
-      image: 'assets/Ahlan_Portal.png',
+      image: 'assets/projects/Ahlan_Portal.png',
       url: 'https://ahlan-portal.web.app/sign-in?redirectURL=%2Fusers',
       name: 'Ahlan Portal',
       year: '2024',
@@ -90,13 +90,13 @@ export class AppComponent {
 
     if (theme === 'green') {
       this.renderer.addClass(htmlElement, 'green-theme');
-      this.link = 'assets/3_lines_top_right_green.png';
+      this.link = 'assets/lines/3_lines_top_right_green.png';
     } else if (theme === 'blue') {
       this.renderer.addClass(htmlElement, 'blue-theme');
-      this.link = 'assets/3_lines_top_right_blue.png';
+      this.link = 'assets/lines/3_lines_top_right_blue.png';
     } else if (theme === 'purple') {
       this.renderer.addClass(htmlElement, 'purple-theme');
-      this.link = 'assets/3_lines_top_right_purple.png';
+      this.link = 'assets/lines/3_lines_top_right_purple.png';
     }
   }
 }
