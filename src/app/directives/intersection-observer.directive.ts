@@ -26,7 +26,7 @@ export class IntersectionObserverDirective implements OnInit, OnDestroy {
         });
       },
       {
-        threshold: 0.7,
+        threshold: 0.4, // Lower the threshold to 10%
       }
     );
 

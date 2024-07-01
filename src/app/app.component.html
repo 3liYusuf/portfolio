@@ -1,5 +1,4 @@
 <div class="container">
-  <div id="home" appIntersectionObserver="home"></div>
   <div class="sticky-outline">
     <div class="outline">
       <a href="#home" class="tag">Home</a>
@@ -22,7 +21,7 @@
       ></button>
     </div>
   </div>
-  <div class="home" appIntersectionObserver="home">
+  <div id="home" class="home" appIntersectionObserver="home">
     <app-title-style [link]="link" [title]="'Hello,I\'m Ali'"></app-title-style>
     <div class="about-me">
       I'm a <span class="primary-txt">Full-Stack Developer</span><br />
@@ -54,12 +53,7 @@
     </div>
     <br /><br /><br />
   </div>
-  <div class="experience" appIntersectionObserver="experience">
-    <div
-      id="experience"
-      appIntersectionObserver="experience"
-      style="height: 100px"
-    ></div>
+  <div id="experience" class="experience" appIntersectionObserver="experience">
     <div class="center">
       <app-title-style [link]="link" [title]="'MY RESUME'"></app-title-style>
     </div>
@@ -83,14 +77,8 @@
         </div>
       </div>
     </ul>
-    <div appIntersectionObserver="experience" style="height: 50px"></div>
   </div>
-  <div class="skills" appIntersectionObserver="skills">
-    <div
-      id="skills"
-      appIntersectionObserver="skills"
-      style="height: 100px"
-    ></div>
+  <div id="skills" class="skills" appIntersectionObserver="skills">
     <div class="center">
       <app-title-style [link]="link" [title]="'MY SKILLS'"></app-title-style>
     </div>
@@ -127,14 +115,8 @@
         [icon]="'fab fa-css3-alt'"
       ></app-adv-box>
     </div>
-    <div appIntersectionObserver="skills" style="height: 100px"></div>
   </div>
-  <div class="services center" appIntersectionObserver="services">
-    <div
-      id="services"
-      appIntersectionObserver="services"
-      style="height: 100px"
-    ></div>
+  <div id="services" class="services center" appIntersectionObserver="services">
     <app-title-style [link]="link" [title]="'MY SERVICES'"></app-title-style>
     <div class="title center">What Can I Do?</div>
     <div class="services-boxes-container">
@@ -160,10 +142,8 @@
         "
       ></app-services-boxes>
     </div>
-    <div appIntersectionObserver="services" style="height: 150px"></div>
   </div>
-  <div class="projects center" appIntersectionObserver="projects">
-    <div id="projects" appIntersectionObserver="projects"></div>
+  <div id="projects" class="projects center" appIntersectionObserver="projects">
     <app-title-style [link]="link" [title]="'MY PROJECTS'"></app-title-style>
     <div class="title center">What I've done?</div>
     <div class="projects-container">
@@ -183,20 +163,17 @@
       </a>
     </div>
   </div>
-  <div
-    id="contact"
-    appIntersectionObserver="projects"
-    style="height: 100px"
-  ></div>
-  <div class="contact" appIntersectionObserver="contact">
+  <div id="contact" class="contact" appIntersectionObserver="contact">
     <div class="contact-first-container">
       <app-title-style [link]="link" [title]="'CONTACT US'"></app-title-style>
       <div class="title">Let's Get In Touch!</div>
       <div class="contact-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse
-        impedit eaque molestiae vero, omnis velit nostrum et quasi corporis,
-        cupiditate veniam molestias obcaecati exercitationem amet, quaerat
-        praesentium quod ex.
+        I would love to hear from you! Whether you have a question, a project
+        idea, or just want to connect, feel free to reach out. I'm passionate
+        about web development and always excited to discuss new opportunities.
+        Let's collaborate and create something amazing together. Don't hesitate
+        to contact me using the form below or through my social media channels.
+        Looking forward to connecting with you!
       </div>
       <hr
         style="
@@ -281,15 +258,14 @@
     </div>
   </div>
 </div>
-<div id="footer" appIntersectionObserver="contact"></div>
 <div class="footer" appIntersectionObserver="contact">
   <div class="flexing">
     <div class="f-first">
       <div class="f-header">ALI</div>
       <div class="f-desc">
         <div class="desc-paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          modi amet vel quae molestiae voluptatibus numquam.
+          Thank you for visiting my portfolio. If you're interested in
+          collaborating or have any questions, feel free to reach out!
         </div>
         <div class="desc-email">
           <a class="email-container" href="mailto:IT@3liYusuf.com">
