@@ -1,3 +1,4 @@
+// // General // //
 .container {
   background-color: #0e0e0e;
   padding: 0.8rem 7rem 3rem 7rem;
@@ -82,8 +83,9 @@
   padding: 150px 0;
   min-height: 100vh;
 }
-// // Home Section // //
+//
 
+// // Home Section // //
 .home {
   padding: 60px 0 0 0;
 }
@@ -153,9 +155,9 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*this */
   gap: 10px;
 }
+//
 
 // // Experience // //
-
 .experience {
   padding-bottom: 50px;
   padding-left: 85px;
@@ -217,7 +219,6 @@
 //
 
 // // Projects // //
-
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -279,6 +280,7 @@
   font-weight: 700;
   font-size: 2.6rem;
 }
+//
 
 // // Contact // //
 .contact {
@@ -341,7 +343,7 @@
 }
 
 textarea.contact-form-input {
-  resize: none; /* Prevents resizing */
+  resize: none;
 }
 
 .form-submit {
@@ -457,7 +459,10 @@ textarea.contact-form-input {
   .container {
     padding: 0.6rem 4rem 1.5rem 4rem;
   }
-
+  .theme-btn {
+    width: 17px;
+    height: 17px;
+  }
   .title {
     font-size: 2rem;
   }
@@ -568,6 +573,12 @@ textarea.contact-form-input {
 @media (width <= 550px) {
   .container {
     padding: 0.3rem 0.3rem 1.5rem 0.3rem;
+  }
+
+  .theme-btn {
+    width: 14px;
+    height: 14px;
+    margin: 3px;
   }
 
   .home,
