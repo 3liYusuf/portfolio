@@ -50,6 +50,12 @@ export class AppComponent {
       name: 'Ahlan Portal',
       year: '2024',
     },
+    {
+      image: 'assets/projects/Secrets.png',
+      url: 'https://secrets.3liyusuf.com',
+      name: 'Secrets',
+      year: '2023',
+    },
   ];
   constructor(
     private fb: FormBuilder,
