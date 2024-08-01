@@ -1,13 +1,48 @@
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { HttpClient } from '@angular/common/http';
-import { Component, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  animations: [
+    trigger('sectionAnimate', [
+      state(
+        'hidden',
+        style({
+          transform: 'translateX(-100px)',
+          opacity: 0,
+        })
+      ),
+      state(
+        'shown',
+        style({
+          transform: 'translateX(0)',
+          opacity: 1,
+        })
+      ),
+      transition('hidden=>shown', animate(400)),
+    ]),
+  ],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  sectionStates: { [key: string]: string } = {
+    home: 'hidden',
+    experience: 'hidden',
+    skills: 'hidden',
+    services: 'hidden',
+    projects: 'hidden',
+    footer: 'hidden',
+  };
+  state = 'hidden';
   link = 'assets/lines/3_lines_top_right_green.png';
   title = 'portfolio';
   experiences = [
@@ -69,6 +104,34 @@ export class AppComponent {
     });
   }
 
+  ngOnInit(): void {
+    this.observeSections();
+  }
+
+  observeSections() {
+    const sections = Object.keys(this.sectionStates);
+    const observerOptions = {
+      root: null,
+      threshold: 0.4,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id;
+          this.sectionStates[sectionId] = 'shown'; // Trigger the animation
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => {
+      const sectionElement = document.getElementById(section);
+      if (sectionElement) {
+        observer.observe(sectionElement);
+      }
+    });
+  }
+
   onSubmit() {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
@@ -87,7 +150,9 @@ export class AppComponent {
         });
     }
   }
-
+  animateState() {
+    this.state = 'shown';
+  }
   changeTheme(theme: string): void {
     const htmlElement = document.documentElement;
     this.renderer.removeClass(htmlElement, 'green-theme');

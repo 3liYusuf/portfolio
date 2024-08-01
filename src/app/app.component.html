@@ -21,7 +21,12 @@
       ></button>
     </div>
   </div>
-  <div id="home" class="home" appIntersectionObserver="home">
+  <div
+    id="home"
+    class="home"
+    appIntersectionObserver="home"
+    [@sectionAnimate]="sectionStates['home']"
+  >
     <app-title-style [link]="link" [title]="'Hello,I\'m Ali'"></app-title-style>
     <div class="about-me">
       I'm a <span class="primary-txt">Full-Stack Developer</span><br />
@@ -53,7 +58,12 @@
     </div>
     <br /><br /><br />
   </div>
-  <div id="experience" class="experience" appIntersectionObserver="experience">
+  <div
+    id="experience"
+    class="experience"
+    appIntersectionObserver="experience"
+    [@sectionAnimate]="sectionStates['experience']"
+  >
     <div class="center">
       <app-title-style [link]="link" [title]="'MY RESUME'"></app-title-style>
     </div>
@@ -78,7 +88,12 @@
       </div>
     </ul>
   </div>
-  <div id="skills" class="skills" appIntersectionObserver="skills">
+  <div
+    id="skills"
+    class="skills"
+    appIntersectionObserver="skills"
+    [@sectionAnimate]="sectionStates['skills']"
+  >
     <div class="center">
       <app-title-style [link]="link" [title]="'MY SKILLS'"></app-title-style>
     </div>
@@ -116,7 +131,12 @@
       ></app-adv-box>
     </div>
   </div>
-  <div id="services" class="services center" appIntersectionObserver="services">
+  <div
+    id="services"
+    class="services center"
+    appIntersectionObserver="services"
+    [@sectionAnimate]="sectionStates['services']"
+  >
     <app-title-style [link]="link" [title]="'MY SERVICES'"></app-title-style>
     <div class="title center">What Can I Do?</div>
     <div class="services-boxes-container">
@@ -143,7 +163,12 @@
       ></app-services-boxes>
     </div>
   </div>
-  <div id="projects" class="projects center" appIntersectionObserver="projects">
+  <div
+    id="projects"
+    class="projects center"
+    appIntersectionObserver="projects"
+    [@sectionAnimate]="sectionStates['projects']"
+  >
     <app-title-style [link]="link" [title]="'MY PROJECTS'"></app-title-style>
     <div class="title center">What I've done?</div>
     <div class="projects-container">
@@ -163,7 +188,12 @@
       </a>
     </div>
   </div>
-  <div id="contact" class="contact" appIntersectionObserver="contact">
+  <div
+    id="contact"
+    class="contact"
+    appIntersectionObserver="contact"
+    [@sectionAnimate]="sectionStates['contact']"
+  >
     <div class="contact-first-container">
       <app-title-style [link]="link" [title]="'CONTACT US'"></app-title-style>
       <div class="title">Let's Get In Touch!</div>
@@ -258,7 +288,11 @@
     </div>
   </div>
 </div>
-<div class="footer" appIntersectionObserver="contact">
+<div
+  class="footer"
+  appIntersectionObserver="contact"
+  [@sectionAnimate]="sectionStates['footer']"
+>
   <div class="flexing">
     <div class="f-first">
       <div class="f-header">ALI</div>
