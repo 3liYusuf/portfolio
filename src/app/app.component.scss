@@ -80,8 +80,9 @@
 #projects,
 #contact {
   box-sizing: border-box;
-  padding: 150px 0;
-  min-height: 100vh;
+  padding: 0;
+  padding-top: 200px;
+  min-height: 70vh;
 }
 //
 
@@ -492,6 +493,18 @@ textarea.contact-form-input {
   .icon {
     font-size: 2.5rem !important;
   }
+
+  #home,
+  #experience,
+  #skills,
+  #services,
+  #projects,
+  #contact {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 150px;
+    min-height: 70vh;
+  }
   .experience {
     padding-left: 40px;
     padding-right: 40px;
@@ -575,7 +588,7 @@ textarea.contact-form-input {
 
 @media (width <= 550px) {
   .container {
-    padding: 0.3rem 0.3rem 1.5rem 0.3rem;
+    padding: 0.3rem 0.4rem 1.5rem 0.4rem;
   }
 
   .theme-btn {
@@ -594,7 +607,17 @@ textarea.contact-form-input {
     padding-left: 20px;
     padding-right: 20px;
   }
-
+  #home,
+  #experience,
+  #skills,
+  #services,
+  #projects,
+  #contact {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 100px;
+    min-height: 70vh;
+  }
   .services {
     padding-bottom: 0;
   }

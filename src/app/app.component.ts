@@ -112,7 +112,7 @@ export class AppComponent implements OnInit {
     const sections = Object.keys(this.sectionStates);
     const observerOptions = {
       root: null,
-      threshold: 0.4,
+      threshold: 0.2,
     };
 
     const observer = new IntersectionObserver((entries) => {
